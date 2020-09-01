@@ -39,7 +39,7 @@ instance.interceptors.response.use(
  * @param {Object} query Object containing FlureeQL query
  */
 export function flureeQuery(query) {
-  const token = localStorage.getItem("authToken");
+  const token = localStorage.getItem("token");
   if (token) {
     const authHeader = "Bearer " + token;
     return new Promise((resolve, reject) => {
@@ -62,7 +62,7 @@ export function flureeQuery(query) {
  * @param {Array} transactions Should contain Objects, each representing a FlureeQL transaction
  */
 export function flureeTransact(transactions) {
-  const token = localStorage.getItem("authToken");
+  const token = localStorage.getItem("token");
   if (token) {
     return new Promise((resolve, reject) => {
       instance

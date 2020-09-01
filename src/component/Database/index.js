@@ -45,7 +45,7 @@ export default function Database(props) {
   return (
     <React.Fragment>
       {props.children}
-      <Snackbar
+      {/* <Snackbar
         anchorOrigin={{ vertical: "top", horizontal: "left" }}
         open={open}
         autoHideDuration={4000}
@@ -63,7 +63,7 @@ export default function Database(props) {
             </IconButton>
           </React.Fragment>
         }
-      />
+      /> */}
     </React.Fragment>
   );
 }

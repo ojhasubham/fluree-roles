@@ -13,11 +13,9 @@ const LoginButton = ({ values, setUserData }) => {
     let history = useHistory();
 
     const handleClick = async () => {
-        console.log("call");
         const resp = await loginFlureeUser({ user: values.email, password: values.password, expire: 999999999})
-        debugger
-        if (resp && resp.data && resp.data.token) {
-            setUserData({ token: resp.data.token })
+        if (resp) {
+            localStorage.setItem('token', resp);
             history.push('/dashboard');
         }
     }

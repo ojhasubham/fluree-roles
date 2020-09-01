@@ -6,6 +6,15 @@
 		"collection": "product",
 		"predicates": ["*"],
 		"fns": [["_fn/name", "true"]],
-		"ops": ["transact"]
+		"ops": ["all"]
+	},
+	{
+		"_id": "_rule$customer",
+		"id": "customerAccess",
+		"doc": "Allows a customer to Edit product",
+		"collection": "product",
+		"predicates": ["*"],
+		"fns": [["_fn/name", "true"]],
+		"ops": ["query"]
 	}
 ]

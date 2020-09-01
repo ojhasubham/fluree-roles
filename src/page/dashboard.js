@@ -2,7 +2,7 @@ import React from 'react';
 
 const Dashboard = () => {
     return (
-        <React.Fragment>4
+        <React.Fragment>
             <div>This is Dashboard</div>
         </React.Fragment>
     );

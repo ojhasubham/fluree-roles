@@ -22,7 +22,7 @@ const Routes = ({tokenCustom}) => {
                     <Switch>
                         <PublicRoute exact path='/404' component={NotFound} isAuthenticated={tokenCustom} />
                         <PublicRoute exact path='/login' component={Login} isAuthenticated={tokenCustom} />
-                        <PrivateRoute path='/dashboard' component={Dashboard} isAuthenticated={tokenCustom}  exact />
+                        <PublicRoute path='/dashboard' component={Dashboard} isAuthenticated={tokenCustom}  exact />
                         <PrivateRoute path='/addproduct/:id' component={AddProduct} isAuthenticated={tokenCustom}  exact />
                         <PrivateRoute path='/product' component={Product} isAuthenticated={tokenCustom}  exact />
                         <PrivateRoute path='/select' component={SelectBox} isAuthenticated={tokenCustom}  exact />

@@ -29,7 +29,7 @@
 		"_id": "_role?customer",
 		"id": "customer",
 		"rules": [
-			["_rule/id", "root"]
+			["_rule/id", "customerAccess"]
 		]
 	}
 ]
